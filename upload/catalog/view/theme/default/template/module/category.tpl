@@ -1,18 +1,32 @@
-<div class="list-group">
-  <?php foreach ($categories as $category) { ?>
-  <?php if ($category['category_id'] == $category_id) { ?>
-  <a href="<?php echo $category['href']; ?>" class="list-group-item active"><?php echo $category['name']; ?></a>
-  <?php if ($category['children']) { ?>
-  <?php foreach ($category['children'] as $child) { ?>
-  <?php if ($child['category_id'] == $child_id) { ?>
-  <a href="<?php echo $child['href']; ?>" class="list-group-item active">&nbsp;&nbsp;&nbsp;- <?php echo $child['name']; ?></a>
-  <?php } else { ?>
-  <a href="<?php echo $child['href']; ?>" class="list-group-item">&nbsp;&nbsp;&nbsp;- <?php echo $child['name']; ?></a>
-  <?php } ?>
-  <?php } ?>
-  <?php } ?>
-  <?php } else { ?>
-  <a href="<?php echo $category['href']; ?>" class="list-group-item"><?php echo $category['name']; ?></a>
-  <?php } ?>
-  <?php } ?>
+<div class="box">
+
+  <div class="">
+
+<?php
+
+
+function makeList($array) {
+
+        //Base case: an empty array produces no list
+        if (empty($array)) return '';
+
+        //Recursive Step: make a list with child lists
+        $output = '<ul id="catnavleft" class="sf-menu sf-vertical">';
+        foreach ($array as $key => $subArray) {
+        	if(!empty($subArray['children'])){
+            	$output .= '<li><a href="'. $subArray['href'] .'">'. $subArray['name'] .'</a>'. makeList($subArray['children']) .'</li>';
+            } else {
+            	$output .= '<li><a href="'. $subArray['href'] .'">'. $subArray['name'] .'</a></li>';
+            }
+        }
+        $output .= '</ul>';
+        
+        return $output;
+    } 
+
+echo makeList($categories);
+
+?>
+
+  </div>
 </div>
