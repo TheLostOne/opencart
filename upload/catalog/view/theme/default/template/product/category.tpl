@@ -66,11 +66,11 @@
         </div>
         <div class="col-md-3 text-right">
           <select id="input-sort" class="form-control col-sm-3" onchange="location = this.value;">
-            <?php foreach ($sorts as $sorts) { ?>
-            <?php if ($sorts['value'] == $sort . '-' . $order) { ?>
-            <option value="<?php echo $sorts['href']; ?>" selected="selected"><?php echo $sorts['text']; ?></option>
+            <?php foreach ($sorts as $sortitem) { ?>
+            <?php if ($sortitem['value'] == $sort . '-' . $order) { ?>
+            <option value="<?php echo $sortitem['href']; ?>" selected="selected"><?php echo $sortitem['text']; ?></option>
             <?php } else { ?>
-            <option value="<?php echo $sorts['href']; ?>"><?php echo $sorts['text']; ?></option>
+            <option value="<?php echo $sortitem['href']; ?>"><?php echo $sortitem['text']; ?></option>
             <?php } ?>
             <?php } ?>
           </select>
@@ -80,11 +80,11 @@
         </div>
         <div class="col-md-2 text-right">
           <select id="input-limit" class="form-control" onchange="location = this.value;">
-            <?php foreach ($limits as $limits) { ?>
-            <?php if ($limits['value'] == $limit) { ?>
-            <option value="<?php echo $limits['href']; ?>" selected="selected"><?php echo $limits['text']; ?></option>
+            <?php foreach ($limits as $limititem) { ?>
+            <?php if ($limititem['value'] == $limit) { ?>
+            <option value="<?php echo $limititem['href']; ?>" selected="selected"><?php echo $limititem['text']; ?></option>
             <?php } else { ?>
-            <option value="<?php echo $limits['href']; ?>"><?php echo $limits['text']; ?></option>
+            <option value="<?php echo $limititem['href']; ?>"><?php echo $limititem['text']; ?></option>
             <?php } ?>
             <?php } ?>
           </select>
