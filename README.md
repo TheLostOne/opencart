@@ -3,15 +3,20 @@
 
 ## Overview
 
-OpenCart is a free open source ecommerce platform for online merchants. OpenCart provides a professional and reliable foundation from which to build a successful online store.
+This is my fork of the popular OpenCart ecommerce platform.
+Unfortunately, despite it's popularity, OC is bug ridden, insecure, slow and performs very poorly due to shoddy code structre.
+As the owner of OC seems incapable of acknowledging any fault with his code/platform (some bugs have existed for a very long time!), I've decided to fork it and fix it.
+
+If you are Serious about your ecommerce endevours, please do Not use the default OpenCart.
+Instead, consider either this (the patched version) or a difference platform.
 
 ## Reporting a bug
 	
 Please read the instructions below before you create a bug report.
  
- 1. Use [Google](http://www.google.com) to search for your issue.
- 2. Search the [OpenCart forum](http://forum.opencart.com/viewforum.php?f=161), ask the community if they have seen the bug or know how to fix it.
- 3. Check all open and closed issues on the [GitHub bug tracker](https://github.com/opencart/opencart/issues).
+ 1. Don't bother posting a bug in the main OC repository - Daniel Kerr will simply close it after throwing a childish tantrum (just look at [GitHub bug tracker](https://github.com/opencart/opencart/issues) for examples!).,
+ 2. Please make sure you have searched via a search engine and looked in forums etc.
+ 3. Look through "here" ([GitHub bug tracker](https://github.com/TheLostOne/opencart/issues)) to see what you can find.
  4. If your bug is related to the OpenCart core code then please create a bug report on GitHub.
 
 **Important!**
