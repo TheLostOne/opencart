@@ -1,0 +1,23 @@
+List of changes/updates/fixes/patches etc. 
+(All likely desparetly needed but not included due to Daniel Kerrs issues.)
+
+
+1) Sort/Filter code (frontend)
+\catalog\view\theme\default\template\product\category.php
+Original code used same var for in and out,
+New code uses different var for out (so now you can duplicate the filters without stupid errors).
+
+
+2) Pagination fix
+\system\library\pagination.php
+Made all links to [page1] canonical - no more "page=1" in the URL
+(includes [FirstPage] [Previous] and [1])
+
+ 
+Category fixes (frontend)
+\catalog\model\catalog\category.php
+\catalog\controller\module\category.php
+\catalog\view\theme\default\template\module\category.tpl
+New DB Calls in {model} for getAllCategories & getAllProducts
+New recursive functions in {controller} to generate category tree with no-stubs and product counts
+New output code in {template} to output nested categories
