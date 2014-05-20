@@ -4,7 +4,7 @@ MY todo list;
  *) Trawl forums looking for all posts where captain wonder-muppet insults people 
     - and include their code (as it's bound to be good (he only gets upset when someones posts proves how shite his code is))
  *) Check the Russian and Chinese forums (there are some good fixes there), as well as SO.
- 1) Revise all DB calls, and start caching them (need to check (5) to do it right!)
+ 1) Revise all DB calls, and start caching them (need to check (2) to do it right!)
  2) Revise the Date+Time - what moron set it to Y/M/D-T rather than a timestamp?
  3) Remove any crud DB-Table Indexes and apply proper ones (you know, the ones that have been around over a year and moron-master still hasn't included)
  4) Patch the security holes I saw, and include the anti-XSFR class
@@ -21,7 +21,7 @@ MY todo list;
     (mod render to juggle call location(DONE)) 
     (mod render to apply missing H/W to IMG(DONE))
     (CDN and fallbacks(DONE))
-    + Query/OutPut Caching (see (14))
+    + Query/OutPut Caching (see (11))
 14) Canonical System (part done, Pager methods should be applied to Filter/Sort/NumItems etc.)
 15) Accessibility - change to semantic structure (why crappy tables???), apply <label>, place responses after with jump code etc.
     and Remove the stupid Alt+Title attributes, Title for Links, Alt for Images (morons!)
