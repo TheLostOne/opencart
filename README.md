@@ -8,7 +8,7 @@ Unfortunately, despite it's popularity, OC is bug ridden, insecure, slow and per
 As the owner of OC seems incapable of acknowledging any fault with his code/platform (some bugs have existed for a very long time!), I've decided to fork it and fix it.
 
 If you are Serious about your ecommerce endevours, please do Not use the default OpenCart.
-Instead, consider either this (the patched version) or a difference platform.
+Instead, consider either this (the patched version) or a different platform.
 
 ## Reporting a bug
 	
