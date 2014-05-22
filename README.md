@@ -8,12 +8,19 @@ As you can see, he was true to his word - he deleted stuff
 
 Other such posts include;
 http://picpaste.com/opencart-accessibility-daniel-kerr-wants-to-delete.png
+
 http://picpaste.com/opencart-admin-login-security-daniel-kerr-wants-to-delete-cEO2S5Ea.png
+
 http://picpaste.com/opencart-category-filter-issues-daniel-kerr-wants-to-delete.png
+
 http://picpaste.com/opencart-category-issues-daniel-kerr-wants-to-delete.png
+
 http://picpaste.com/opencart-pagination-issue-daniel-kerr-wants-to-delete.png
+
 http://picpaste.com/opencart-poor-SEO-daniel-kerr-wants-to-delete.png
+
 http://picpaste.com/opencart-SEO_URL-issues-daniel-kerr-wants-to-delete.png
+
 (As you can see, he's a little volatile/unstable - and more than willing to lie/decieve)
 
 # OpenCart
