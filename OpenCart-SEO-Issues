@@ -1,0 +1,67 @@
+#SEO Issues in OpenCart
+
+The following have been pointed out to the OC owner, Daniel Kerr,
+who has denied their existence and deleted the comments :(
+
+##1) Title Tags
+As we all know, one of the most influential On-Page factors is the Title Element.
+Yet there is No custom field/input for the <title> tag in OpenCart.
+It instead uses the "name" field for products/categories.
+
+##2) Heading Text
+Another On-Page factor are the headings (<h1>, <h2> etc.).
+Again, there is little/no control over this for categories/products, and again,
+you are forced to use the "name" input for that value.
+
+##3) Link Text
+Links are important - link text holds a fair amount of influence.
+Yet DK has decided that you shouldn't be able to control that either (again, "name" is used instead).
+
+##4) Link Title Attribute
+Though I'm yet to see Google/Bing confirm it's usage, it is of use to some users.
+But there is no input method for this either.
+
+##5) Canonical Link Element
+At present, only Products carry the CLE.
+There is no CLE system for Categories or Info pages (which considering the below is a problem,
+as OpenCart is rife with Canonical Issues and the resulting Internal Duplication!)
+a)The Pager/Pagination system creates dupes due to "/" and "/page=1"
+b)The Sort system generates dupes due to "default"
+c)The view-items generates dupes due to "default"
+d)Homepage comes with 3 possible URLs, "/", "/index.php", "/index.php?route=common/home"
+etc.
+This is worsened due to the SEO_URL system, and how badly the Cateogories system works.
+Basically, it uses the "last" "valid" value in the URL to fetch content for.
+That means people can link to mostly false URLs, still get a 200 response.
+(If you have a category path of "/cat1/cat2/" - you can access it via "/cat2", "/fake/cat2", "/cat1/cat2/fake" etc.)
+(DK refused to acknowledge this massive flaw, and deleted the comments!)
+
+##6) Canonical / 301s
+There is currently no system/method in OC to handle redirects or overriding canonical link elements.
+This means changing categories/products will cause SE Ranking problems.
+
+##7) Robot Meta
+There is currently NO Robots system in place.  This means you have no way of applying "noindex" to any pages,
+including Search results (and the SE's have clearly stated that we should not allow indexing of internal search results).
+
+##8) LoadTimes
+Unfortunately - this falls into 2 core groups.
+a) The first is PRocessing Time ... due to some seriously poor DB Calls and php, 
+Category menu generation is incredibly slow (has been for years!).
+There is also a seriously lack of Query/Generated caches (which would at least patch the problem)
+The standard install (with only a few categories/products) will typically take 2.6+ seconds.  
+If you get serious with the number of Categories/Products, you may look at process times of 10+ seconds !!!
+Again, though flagged, Daniel Kerr is ignored the issue.
+b) The second side is basic design best practices have been ignored (comments explaining better methods were deleted).
+So rather than using CDNs (google etc.) for things like JQuery, the tempalte forces you to use a local version.
+Javascript is slotted into the <body> willy nilly, rather than being consolidated and located at the bottom of </body>,
+(as is advised as best practice for years!).
+The is no "combine" method - resulting in numerous JS and CSS files being loaded, causing page load speeds to take even longer.
+Both of those together may cause abandonment issues, and loss of revenue (that's if people can find your site!).
+
+-----
+
+## On the upside ...
+
+I can fix all of those.
+So you don't have to put up with seriously shoddy SEO handicapping due to crappy code!
